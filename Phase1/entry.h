@@ -1,0 +1,24 @@
+// entry.h
+// prototypes what're in entry.S
+// OS bootstrap and The Kernel for OS phase 1
+//
+// Team Name: Alex (Members: Alex Reiter)
+
+#ifndef __ENTRY__
+#define __ENTRY__
+
+#ifndef ASSEMBLER  // skip below if ASSEMBLER defined (from an assembly code)
+                   // since below is not in assembler syntax
+__BEGIN_DECLS
+
+#include "types.h"                // TF_t
+
+void TimerEntry(void);            // coded in entry.S, assembler won't like this syntax
+void Loader(TF_t *);              // coded in entry.S
+
+__END_DECLS
+
+#endif // ifndef ASSEMBLER
+
+#endif // ifndef _ENTRY_H_
+
