@@ -1,4 +1,4 @@
-// data.h, 159 test test
+// data.h, 159
 // kernel data are all declared in main.c during bootstrap
 // kernel .c code reference them as 'extern'
 // OS bootstrap and The Kernel for OS phase 1
